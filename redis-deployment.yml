@@ -15,9 +15,9 @@ spec:
         type: back-end
     spec:
       containers:
-    - name: redis
-      image: redis
-      ports:
+      - name: redis
+        image: redis
+        ports:
         - containerPort: 6379
   replicas: 3
   selector:

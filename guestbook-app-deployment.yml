@@ -10,6 +10,7 @@ spec:
     metadata:
       name: guestbook-app-pod
       labels:
+        name: guestbook-app-deployment
         app: guestbook-app
         type: front-end
     spec:

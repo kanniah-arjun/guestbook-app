@@ -10,6 +10,7 @@ spec:
     metadata:
       name: guestbook-app-pod
       labels:
+        name: guestbook-app-deployment
         app: guestbook-app
         type: front-end
     spec:
@@ -17,7 +18,7 @@ spec:
         - name: guestbook-app-container
           image: kubernetes/guestbook:v2
           ports:
-            - containerPort: 80
+            - containerPort: 3000
   replicas: 3
   selector:
     matchLabels:

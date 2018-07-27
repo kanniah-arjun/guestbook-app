@@ -19,7 +19,6 @@ spec:
         image: redis
         ports:
         - containerPort: 6379
-  replicas: 3
   selector:
     matchLabels:
       app: guestbook-app
